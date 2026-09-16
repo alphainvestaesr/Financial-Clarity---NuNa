@@ -1,0 +1,26 @@
+/* NuNa - tokens de tema (claro/escuro) */
+
+:root{
+  --bg:#FAFAF7; --card:#FFFFFF; --border:#E5E5E0; --border2:#EFEFEA;
+  --tx:#1A1A1A; --tx2:#52525B; --tx3:#8A857A;
+  --pos:#1B4332; --posL:#D8E2D5; --neg:#BC4749; --negL:#F5DCDC;
+  --acc:#F77F00; --accL:#FCE4C5; --neu:#4A6FA5; --zebra:#FBFBF8;
+  --ana:#4A6FA5; --manu:#6F4E7C; --nuna:#1B4332;
+}
+:root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){} }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16161A; --card:#1E1E23; --border:#32323A; --border2:#2A2A31;
+    --tx:#F2F2EF; --tx2:#B8B8B2; --tx3:#8A857A;
+    --pos:#7FC8A0; --posL:#22352B; --neg:#E8878A; --negL:#3A2426;
+    --acc:#FFA03D; --accL:#3D2A12; --neu:#8FB0DF; --zebra:#232329;
+    --ana:#8FB0DF; --manu:#B48FC4; --nuna:#7FC8A0;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16161A; --card:#1E1E23; --border:#32323A; --border2:#2A2A31;
+  --tx:#F2F2EF; --tx2:#B8B8B2; --tx3:#8A857A;
+  --pos:#7FC8A0; --posL:#22352B; --neg:#E8878A; --negL:#3A2426;
+  --acc:#FFA03D; --accL:#3D2A12; --neu:#8FB0DF; --zebra:#232329;
+  --ana:#8FB0DF; --manu:#B48FC4; --nuna:#7FC8A0;
+}
